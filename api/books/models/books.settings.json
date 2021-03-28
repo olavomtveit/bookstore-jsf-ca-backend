@@ -1,5 +1,5 @@
 {
-  "kind": "singleType",
+  "kind": "collectionType",
   "collectionName": "books",
   "info": {
     "name": "books"
@@ -10,17 +10,20 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "title": {
+    "Title": {
       "type": "string"
     },
-    "description": {
-      "type": "text"
+    "Description": {
+      "type": "richtext"
     },
-    "author": {
+    "Author": {
       "type": "string"
     },
-    "image": {
-      "collection": "file",
+    "Year": {
+      "type": "integer"
+    },
+    "Image": {
+      "model": "file",
       "via": "related",
       "allowedTypes": [
         "images",
@@ -29,9 +32,6 @@
       ],
       "plugin": "upload",
       "required": false
-    },
-    "release": {
-      "type": "integer"
     }
   }
 }
