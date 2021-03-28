@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/books",
+      "handler": "books.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/books",
+      "handler": "books.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/books",
+      "handler": "books.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
